@@ -1,0 +1,9 @@
+{
+  "name": "no-boring-bot",
+  "version": "1.0.0",
+  "description": "Bot for the NBR community",
+  "main": "src/main.ts",
+  "author": "Yaroslav.Dusaniuk <yaroslav.dusaniuk@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
