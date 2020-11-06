@@ -17,11 +17,11 @@ describe('firestore.connection', () => {
 
       expect(initializeApp).toHaveBeenCalledWith({
         credential: credential.cert({
-          privateKey: CONFIG.nbr.database.privateKey,
-          clientEmail: CONFIG.nbr.database.clientEmail,
-          projectId: CONFIG.nbr.database.projectId,
+          privateKey: CONFIG.bot.database.privateKey,
+          clientEmail: CONFIG.bot.database.clientEmail,
+          projectId: CONFIG.bot.database.projectId,
         }),
-        databaseURL: CONFIG.nbr.database.databaseURL,
+        databaseURL: CONFIG.bot.database.databaseURL,
       }, expect.any(String));
     });
   });
