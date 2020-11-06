@@ -1,12 +1,12 @@
 import 'reflect-metadata';
 
 import { CONFIG } from './config';
-import { Server } from './shared/server';
-import { Bot } from './shared/interfaces';
+import { Server } from './services/server';
+import { Bot } from './interfaces/bot';
 
 import { container } from './inversify.config';
 
-import { TYPES as NBR_TYPES } from './nbr/types';
+import { TYPES as NBR_TYPES } from './types';
 
 if (CONFIG.environment !== 'test') {
   const bot: Bot = container.get<Bot>(NBR_TYPES.NBR_BOT)

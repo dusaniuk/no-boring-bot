@@ -1,8 +1,8 @@
 import { BaseScene, HearsTriggers, Middleware } from 'telegraf';
 import { UpdateType } from 'telegraf/typings/telegram-types';
 
-import { AppContext } from '../src/shared/interfaces';
-import { ISceneFactory } from '../src/nbr/telegram-bot/interfaces/scene-factory';
+import { AppContext } from '../src/interfaces/index';
+import { ISceneFactory } from '../src/bot/interfaces/scene-factory';
 
 export interface TestableSceneState {
   onEnter?: Middleware<AppContext>;
