@@ -54,16 +54,16 @@ export class NbrBot implements Bot {
 
     this.useScenes();
 
-    this.bot.command('start', async (ctx: AppContext) => {
-      try {
-        await ctx.replyWithMarkdown(ctx.i18n.t('start.intro'));
-        await ctx.scene.enter(Scene.Activities);
-
-        await this.saveTelegrafUser(ctx);
-      } catch(err) {
-        Logger.error(err)
-      }
-    });
+    // this.bot.command('start', async (ctx: AppContext) => {
+    //   try {
+    //     await ctx.replyWithMarkdown(ctx.i18n.t('start.intro'));
+    //     await ctx.scene.enter(Scene.Activities);
+    //
+    //     await this.saveTelegrafUser(ctx);
+    //   } catch(err) {
+    //     Logger.error(err)
+    //   }
+    // });
 
     this.bot.command('announce', (ctx: AppContext) => {
       return ctx.scene.enter(Scene.Announce);
